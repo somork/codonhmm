@@ -3,7 +3,7 @@ These are the files of the codonhmm project.
 The project is based on using the probabilistic logic programming language and machine learning system PRISM to implement and test a number of different HMM based models of protein coding potential to be used for e.g. gene finding.
 
 Running these experiments requires PRISM that is available for download at:
-
+http://sato-www.cs.titech.ac.jp/prism/
 
 The project include the following directories: (See README within each directory for a more detailed description)
 
