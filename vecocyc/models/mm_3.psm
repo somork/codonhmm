@@ -1,0 +1,35 @@
+% mm_3.psm
+% S/ren M/rk
+% 100517
+
+:-['../lib/default.pl'].
+data('../data/nc000913_2_v.dat').
+
+% parameters:
+values(transition(begin),[state(1),state(2),state(3)]).
+
+values(transition(state(1),_,_,_),[state(1),end]).
+values(transition(state(2),_,_,_),[state(2),end]).
+values(transition(state(3),_,_,_),[state(3),end]).
+
+values(emission(_,_,_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+values(emission(_),[a,c,g,t]).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(NS,Obs).
+
+% recursion:
+recursion(state(S),[Xi|[Yi|[Zi|R]]]):-
+        msw(emission(S),Xi),
+        msw(emission(S,Xi),Yi),
+        msw(emission(S,Xi,Yi),Zi),
+        msw(transition(state(S),Xi,Yi,Zi),NS),
+        recursion(NS,R).
+
+% termination:
+recursion(end,[]).
+
+

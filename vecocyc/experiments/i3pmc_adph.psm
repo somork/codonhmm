@@ -1,0 +1,44 @@
+% i3pmc_adph.psm
+% S/ren M/rk
+% 100721
+
+:-['../lib/default.pl'].
+data('../data/nc000913_2_v.dat').
+
+% parameters:
+values(transition(begin),[state(1)]).
+
+values(transition(state(1)),[state(1)]).
+
+values(emission(_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+
+% ADPH:
+values(adph,[s,g]).
+
+adph(1,s,adph(1)).
+adph(1,g,adph(2)).
+adph(2,s,adph(2)).
+adph(2,g,adph(3)).
+adph(3,s,adph(3)).
+adph(3,g,end).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(adph(1),NS,Obs).
+
+recursion(adph(A),state(1),[Xi|[Yi|[Zi|R]]]):-
+        msw(emission(1),Xi),
+        msw(emission(Xi),Yi),
+        msw(emission(Xi,Yi),Zi),
+        msw(transition(state(1)),NS),
+        msw(adph,SG),
+        adph(A,SG,NA),
+        recursion(NA,NS,R).
+
+% termination:
+recursion(end,_,[]).
+
+
+

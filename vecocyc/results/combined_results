@@ -1,0 +1,436 @@
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 8 milliseconds
+loading::aa.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3229411.517926361)
+Statistics on learning:
+        Graph size: 2476049
+        Number of switches: 45
+        Number of switch instances: 552
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3229411.517926361
+        Total learning time: 45022.738 seconds
+        Explanation search time: 45020.786 seconds
+        Total table space used: 1290726104 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 32 milliseconds
+loading::eco.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3252224.501892965)
+Statistics on learning:
+        Graph size: 9061153
+        Number of switches: 386
+        Number of switch instances: 453
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3252224.501892965
+        Total learning time: 181467.433 seconds
+        Explanation search time: 181458.776 seconds
+        Total table space used: 464110072 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::i3pmc.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3260134.503537951)
+Statistics on learning:
+        Graph size: 4123531
+        Number of switches: 23
+        Number of switch instances: 87
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3260134.503537951
+        Total learning time: 12076.855 seconds
+        Explanation search time: 12074.314 seconds
+        Total table space used: 541653376 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 0 milliseconds
+loading::mc5.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3306544.991806685)
+Statistics on learning:
+        Graph size: 7447637
+        Number of switches: 1048
+        Number of switch instances: 4187
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3306544.991806685
+        Total learning time: 312.135 seconds
+        Explanation search time: 307.099 seconds
+        Total table space used: 1682191152 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::mm.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3244481.407706739)
+Statistics on learning:
+        Graph size: 4123531
+        Number of switches: 86
+        Number of switch instances: 213
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3244481.407706739
+        Total learning time: 11376.647 seconds
+        Explanation search time: 11374.303 seconds
+        Total table space used: 541678616 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::aa_3.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0..(29) (Converged: -3211319.685297556)
+Statistics on learning:
+        Graph size: 7428147
+        Number of switches: 133
+        Number of switch instances: 1656
+        Number of iterations (VB-EM): 29
+        Final variational free energy: -3211319.685297556
+        Total learning time: 267082.992 seconds
+        Explanation search time: 267053.810 seconds
+        Total table space used: -1323530480 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+** Warning ** Predicate is not defined contiguously: recursion/2
+compiled in 40 milliseconds
+loading::eco_3.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0..(30) (Converged: -3234887.336236686)
+Statistics on learning:
+        Graph size: 27183459
+        Number of switches: 1156
+        Number of switch instances: 1359
+        Number of iterations (VB-EM): 30
+        Final variational free energy: -3234887.336236686
+        Total learning time: 1447790.813 seconds
+        Explanation search time: 1447676.586 seconds
+        Total table space used: -1994842984 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::i3pmc_3.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0....(49) (Converged: -3257002.109050498)
+Statistics on learning:
+        Graph size: 12370593
+        Number of switches: 27
+        Number of switch instances: 101
+        Number of iterations (VB-EM): 49
+        Final variational free energy: -3257002.109050498
+        Total learning time: 29520.869 seconds
+        Explanation search time: 29457.785 seconds
+        Total table space used: 1456590184 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::mc5_3.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(3) (Converged: -3306564.041048910)
+Statistics on learning:
+        Graph size: 22342911
+        Number of switches: 3142
+        Number of switch instances: 12561
+        Number of iterations (VB-EM): 3
+        Final variational free energy: -3306564.041048910
+        Total learning time: 1525.619 seconds
+        Explanation search time: 1478.656 seconds
+        Total table space used: 554880208 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::mm_3.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0.....(52) (Converged: -3228422.872587681)
+Statistics on learning:
+        Graph size: 12370593
+        Number of switches: 256
+        Number of switch instances: 639
+        Number of iterations (VB-EM): 52
+        Final variational free energy: -3228422.872587681
+        Total learning time: 31707.909 seconds
+        Explanation search time: 31646.010 seconds
+        Total table space used: 1456698704 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::aa_adph.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0.........100.........200.........300.........400...(438) (Converged: -3245110.283294515)
+Statistics on learning:
+        Graph size: 16432670
+        Number of switches: 46
+        Number of switch instances: 532
+        Number of iterations (VB-EM): 438
+        Final variational free energy: -3245110.283294515
+        Total learning time: 191585.273 seconds
+        Explanation search time: 190524.591 seconds
+        Total table space used: 1269364320 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 32 milliseconds
+loading::eco_adph.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(3) (Converged: -3249994.909852224)
+Statistics on learning:
+        Graph size: 34469825
+        Number of switches: 387
+        Number of switch instances: 454
+        Number of iterations (VB-EM): 3
+        Final variational free energy: -3249994.909852224
+        Total learning time: 728316.629 seconds
+        Explanation search time: 728291.455 seconds
+        Total table space used: -468945360 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::i3pmc_adph.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3259571.058948370)
+Statistics on learning:
+        Graph size: 24646232
+        Number of switches: 24
+        Number of switch instances: 88
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3259571.058948370
+        Total learning time: 35810.366 seconds
+        Explanation search time: 35798.981 seconds
+        Total table space used: 2138409496 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 0 milliseconds
+loading::mc5_adph.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3305979.705431721)
+Statistics on learning:
+        Graph size: 49571902
+        Number of switches: 1049
+        Number of switch instances: 4188
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3305979.705431721
+        Total learning time: 889.259 seconds
+        Explanation search time: 862.942 seconds
+        Total table space used: -1980253280 bytes
+Type show_sw_b to show the probability distributions.
+
+yes
+PRISM 1.12.1, (C) Sato Lab, Tokyo Institute of Technology, Jun 2009
+B-Prolog Version 7.1 #3, All rights reserved, (C) Afany Software 1994-2008.
+
+This edition of B-Prolog is for evaluation, learning, and non-profit 
+research purposes only, and a license is needed for any other uses. 
+Please visit http://www.probp.com/license.htm for the detail.
+
+compiled in 4 milliseconds
+loading::mm_adph.psm.out
+consulting::~/settings/default.pl
+** warning ** Singleton variables:(~/settings/default.pl,81-88)::S
+** Warning ** Predicate is not defined contiguously: viterbif_gs/3
+** Warning ** Predicate is not defined contiguously: viterbi_gs/2
+** Warning ** Predicate is not defined contiguously: prob_gs/2
+#goals: 0.........100.........200.........300.........400.........500.........600.........700.........800.........900.........1000.........1100.........1200.........1300.........1400.........1500.........1600.........1700.........1800.........1900.........2000.........2100.........2200.........2300.........2400.(2413)
+Exporting switch information to the EM routine ... done
+#vbem-iterations: 0(2) (Converged: -3259571.078674024)
+Statistics on learning:
+        Graph size: 24646232
+        Number of switches: 87
+        Number of switch instances: 151
+        Number of iterations (VB-EM): 2
+        Final variational free energy: -3259571.078674024
+        Total learning time: 37273.861 seconds
+        Explanation search time: 37262.725 seconds
+        Total table space used: 2138435328 bytes
+Type show_sw_b to show the probability distributions.
+
+yes

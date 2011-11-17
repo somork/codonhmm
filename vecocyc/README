@@ -1,0 +1,53 @@
+# These are the files for running the codonhmm experiments trained on the complete E. coli vecocyc dataset
+
+# Go to scripts and run:
+./training_data.sh
+
+# Change directory to experiments and run [one at a time - takes up
+# a lot of memory and runs for a long time]:
+
+../scripts/experiments.sh
+../scripts/3_experiments.sh
+../scripts/adph_experiments.sh
+
+# when completed run [sometimes PRISM crashes, check with ls -l
+# ../viterbi, remove the lines that succeded and rerun]:
+
+../scripts/iid_decode.sh
+../scripts/aa_decode.sh
+../scripts/aa_3_decode.sh
+../scripts/aa_adph_decode.sh
+../scripts/eco_decode.sh
+../scripts/eco_3_decode.sh
+../scripts/eco_adph_decode.sh
+../scripts/i3pmc_decode.sh
+../scripts/i3pmc_3_decode.sh
+../scripts/i3pmc_adph_decode.sh
+../scripts/mc5_decode.sh
+../scripts/mc5_3_decode.sh
+../scripts/mc5_adph_decode.sh
+../scripts/mm_decode.sh
+../scripts/mm_3_decode.sh
+../scripts/mm_adph_decode.sh
+
+# go to scripts and run:
+./concat_viterbi.sh
+./log_odds.sh
+./3_log_odds.sh
+./adph_log_odds.sh
+
+###############
+
+# To get tpr and fpr values for ROC plots and cm files for tables run:
+./get_stuff_from_lo.sh
+./3_get_stuff_from_lo.sh
+./adph_get_stuff_from_lo.sh
+
+# to get learn table output run:
+./learn_tables.sh
+
+# to generate length distribution plot data run:
+./samples.sh
+./hist.sh
+
+
