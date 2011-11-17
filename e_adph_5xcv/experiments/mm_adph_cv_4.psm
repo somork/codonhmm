@@ -1,0 +1,76 @@
+% mm_adph.psm
+% from frames.psm
+% S/ren M/rk
+% 100614
+
+% like frame.psm 
+% with Kroghish lenght modeling...
+% "stay or go now?"= same probs
+% no stop in 1 and 2?
+
+% "triplets"
+% two first emissions on i
+% third emission on state tuple and 2 previous emissions
+% transitions on states, 2 previous and present emission...
+
+% use to get "stop" transitions for both frames for frames_g.psm
+% use to get coding and overlapping i/j emissions for frames_g.psm
+
+% combines with frame_i.psm to get (i,i) emissions and i/j "start" transitions
+
+:-['~/settings/default.pl'].
+
+%data%('~/data/training/u00096mv.dat').
+%data('~/data/training/nc000913_2_vecocyc.dat').
+data('../training_data/vecocyc_train_4.dat').
+
+
+
+
+% parameters:
+
+values(emission(_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+values(emission(_,_,_),[a,c,g,t]).
+
+%values(emission(p),[a,c,g,t]).
+%values(emission(p,_),[a,c,g,t]).
+%values(emission(p,t,a),[c,t]).
+%values(emission(p,t,g),[c,g,t]).
+%values(emission(p,_,_),[a,c,g,t]).
+
+%values(emission(s),[a,c,g,t]).
+%values(emission(s,_),[a,c,g,t]).
+%values(emission(s,_,_),[a,c,g,t]).
+
+values(transition(i),[g]).
+values(transition(s),[g]).
+values(transition(p),[s,g]).
+
+values(next(i,0,g),[s(p,1)]).
+
+values(next(p,1,s),[s(p,1)]).
+values(next(p,1,g),[s(p,2)]).
+values(next(p,2,s),[s(p,2)]).
+values(next(p,2,g),[s(p,3)]).
+values(next(p,3,s),[s(p,3)]).
+values(next(p,3,g),[s(s,0)]).
+
+values(next(s,0,g),[end]).
+
+
+% termination:
+recursion(end,[]).
+
+recursion(s(S,P),[Q|[V|[W|R]]]):-
+        msw(emission(S),Q),
+        msw(emission(S,Q),V),
+        msw(emission(S,Q,V),W),
+        msw(transition(S),SG),
+        msw(next(S,P,SG),N),
+        recursion(N,R).
+
+% initiation:
+model(Obs):-
+        recursion(s(i,0),Obs).
+

@@ -1,0 +1,485 @@
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: ecoparseadph_cv_1.psm
+Null model: iid_cv.psm
+Data generated  from idurfs.py
+organism:"Escherichia coli str. K-12 substr. MG1655"
+strain:"K-12"
+sub_strain:"MG1655"
+db_xref:"taxon:511145"
+version: NC_000913
+151392 URFs total
+2413 ORFs in Golden Standard
+2409 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1875
+False Positives (Type I): 1078
+False Negatives (Type II): 534
+True Negatives: 65339
+
+Optimal log odds threshold w.r.t min(FP+FN): 27.6543455336
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976579
+True Positive Rate (sensitivity/recall): 0.778331
+Positive Predictive Value (precision/"guigo specificity"]:0.634948
+True Negative Rate: (Specificity):0.983769
+False Positive Rate: 0.0162307842872
+Negative Predictive Value: 0.991893492023
+False Discovery Rate: 0.365052488994
+ROC value: 0.0208533116521
+ROC product 0.012632926749
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 2014
+False Positives (Type I): 1275
+False Negatives (Type II): 395
+True Negatives: 65142
+
+Optimal log odds threshold w.r.t min(FP+FN): 21.1322416675
+
+Performance Metrics:
+Match Coefficient (accuracy):0.975736
+MCC optimized Confusion Matrix:
+True Positives: 2084
+False Positives (Type I): 1416
+False Negatives (Type II): 325
+True Negatives: 65001
+
+Optimal log odds threshold w.r.t MCC: 17.526766225
+
+Performance Metrics:
+Match Coefficient: 0.974704
+Mathew's Correlation Coefficient: 0.705838
+TPR-FPR:0.843769 
+True Positive Rate: 0.865089
+False Positive Rate: 0.021320
+Positive Predictive Value: 0.595429
+True Negative Rate: 0.978680
+Negative Predictive Value: 0.995025
+False Positive Discovery Rate: 0.404571
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2300
+False Positives (Type I): 3083
+False Negatives (Type II): 109
+True Negatives: 63334
+
+Optimal log odds threshold w.r.t TPR-FPR: 2.47021150453
+
+Performance Metrics:
+Match Coefficient: 0.953622
+Mathew's Correlation Coefficient: 0.621727
+ROC: 0.908334
+True Positive Rate: 0.954753
+False Positive Rate: 0.046419
+Positive Predictive Value: 0.427271
+True Negative Rate: 0.953581
+Negative Predictive Value: 0.998282
+False Positive Discovery Rate: 0.572729
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: ecoparseadph_cv_2.psm
+Null model: iid_cv.psm
+Data generated  from idurfs.py
+organism:"Escherichia coli str. K-12 substr. MG1655"
+strain:"K-12"
+sub_strain:"MG1655"
+db_xref:"taxon:511145"
+version: NC_000913
+151392 URFs total
+2413 ORFs in Golden Standard
+2409 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1829
+False Positives (Type I): 1034
+False Negatives (Type II): 580
+True Negatives: 65383
+
+Optimal log odds threshold w.r.t min(FP+FN): 30.0160743908
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976550
+True Positive Rate (sensitivity/recall): 0.759236
+Positive Predictive Value (precision/"guigo specificity"]:0.638840
+True Negative Rate: (Specificity):0.984432
+False Positive Rate: 0.0155683032958
+Negative Predictive Value: 0.991207191911
+False Discovery Rate: 0.361159622773
+ROC value: 0.0205052174082
+ROC product 0.0118200193973
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 2004
+False Positives (Type I): 1273
+False Negatives (Type II): 405
+True Negatives: 65144
+
+Optimal log odds threshold w.r.t min(FP+FN): 21.8733415208
+
+Performance Metrics:
+Match Coefficient (accuracy):0.975620
+MCC optimized Confusion Matrix:
+True Positives: 2100
+False Positives (Type I): 1476
+False Negatives (Type II): 309
+True Negatives: 64941
+
+Optimal log odds threshold w.r.t MCC: 17.1775660857
+
+Performance Metrics:
+Match Coefficient: 0.974065
+Mathew's Correlation Coefficient: 0.703455
+TPR-FPR:0.849508 
+True Positive Rate: 0.871731
+False Positive Rate: 0.022223
+Positive Predictive Value: 0.587248
+True Negative Rate: 0.977777
+Negative Predictive Value: 0.995264
+False Positive Discovery Rate: 0.412752
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2299
+False Positives (Type I): 3110
+False Negatives (Type II): 110
+True Negatives: 63307
+
+Optimal log odds threshold w.r.t TPR-FPR: 2.88771963957
+
+Performance Metrics:
+Match Coefficient: 0.953215
+Mathew's Correlation Coefficient: 0.619797
+ROC: 0.907513
+True Positive Rate: 0.954338
+False Positive Rate: 0.046825
+Positive Predictive Value: 0.425032
+True Negative Rate: 0.953175
+Negative Predictive Value: 0.998265
+False Positive Discovery Rate: 0.574968
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: ecoparseadph_cv_3.psm
+Null model: iid_cv.psm
+Data generated  from idurfs.py
+organism:"Escherichia coli str. K-12 substr. MG1655"
+strain:"K-12"
+sub_strain:"MG1655"
+db_xref:"taxon:511145"
+version: NC_000913
+151392 URFs total
+2413 ORFs in Golden Standard
+2409 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1822
+False Positives (Type I): 1012
+False Negatives (Type II): 587
+True Negatives: 65405
+
+Optimal log odds threshold w.r.t min(FP+FN): 29.5722755313
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976768
+True Positive Rate (sensitivity/recall): 0.756330
+Positive Predictive Value (precision/"guigo specificity"]:0.642908
+True Negative Rate: (Specificity):0.984763
+False Positive Rate: 0.0152370628002
+Negative Predictive Value: 0.991104982422
+False Discovery Rate: 0.357092448836
+ROC value: 0.0201460396738
+ROC product 0.0115242542225
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 2026
+False Positives (Type I): 1264
+False Negatives (Type II): 383
+True Negatives: 65153
+
+Optimal log odds threshold w.r.t min(FP+FN): 20.2537980043
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976070
+MCC optimized Confusion Matrix:
+True Positives: 2026
+False Positives (Type I): 1264
+False Negatives (Type II): 383
+True Negatives: 65153
+
+Optimal log odds threshold w.r.t MCC: 20.2537980043
+
+Performance Metrics:
+Match Coefficient: 0.976070
+Mathew's Correlation Coefficient: 0.708080
+TPR-FPR:0.821982 
+True Positive Rate: 0.841013
+False Positive Rate: 0.019031
+Positive Predictive Value: 0.615805
+True Negative Rate: 0.980969
+Negative Predictive Value: 0.994156
+False Positive Discovery Rate: 0.384195
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2276
+False Positives (Type I): 2485
+False Negatives (Type II): 133
+True Negatives: 63932
+
+Optimal log odds threshold w.r.t TPR-FPR: 4.6571975286
+
+Performance Metrics:
+Match Coefficient: 0.961962
+Mathew's Correlation Coefficient: 0.657182
+ROC: 0.907375
+True Positive Rate: 0.944790
+False Positive Rate: 0.037415
+Positive Predictive Value: 0.478051
+True Negative Rate: 0.962585
+Negative Predictive Value: 0.997924
+False Positive Discovery Rate: 0.521949
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: ecoparseadph_cv_4.psm
+Null model: iid_cv.psm
+Data generated  from idurfs.py
+organism:"Escherichia coli str. K-12 substr. MG1655"
+strain:"K-12"
+sub_strain:"MG1655"
+db_xref:"taxon:511145"
+version: NC_000913
+151392 URFs total
+2413 ORFs in Golden Standard
+2409 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1858
+False Positives (Type I): 1054
+False Negatives (Type II): 551
+True Negatives: 65363
+
+Optimal log odds threshold w.r.t min(FP+FN): 28.2327877598
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976680
+True Positive Rate (sensitivity/recall): 0.771274
+Positive Predictive Value (precision/"guigo specificity"]:0.638049
+True Negative Rate: (Specificity):0.984131
+False Positive Rate: 0.0158694310192
+Negative Predictive Value: 0.991640622629
+False Discovery Rate: 0.361950549451
+ROC value: 0.0205755970534
+ROC product 0.0122396856927
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 1994
+False Positives (Type I): 1226
+False Negatives (Type II): 415
+True Negatives: 65191
+
+Optimal log odds threshold w.r.t min(FP+FN): 21.6682999619
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976157
+MCC optimized Confusion Matrix:
+True Positives: 2054
+False Positives (Type I): 1341
+False Negatives (Type II): 355
+True Negatives: 65076
+
+Optimal log odds threshold w.r.t MCC: 18.82971817
+
+Performance Metrics:
+Match Coefficient: 0.975358
+Mathew's Correlation Coefficient: 0.706484
+TPR-FPR:0.832445 
+True Positive Rate: 0.852636
+False Positive Rate: 0.020191
+Positive Predictive Value: 0.605007
+True Negative Rate: 0.979809
+Negative Predictive Value: 0.994574
+False Positive Discovery Rate: 0.394993
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2278
+False Positives (Type I): 2620
+False Negatives (Type II): 131
+True Negatives: 63797
+
+Optimal log odds threshold w.r.t TPR-FPR: 4.34322226633
+
+Performance Metrics:
+Match Coefficient: 0.960030
+Mathew's Correlation Coefficient: 0.647760
+ROC: 0.906173
+True Positive Rate: 0.945621
+False Positive Rate: 0.039448
+Positive Predictive Value: 0.465088
+True Negative Rate: 0.960552
+Negative Predictive Value: 0.997951
+False Positive Discovery Rate: 0.534912
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: ecoparseadph_cv_5.psm
+Null model: iid_cv.psm
+Data generated  from idurfs.py
+organism:"Escherichia coli str. K-12 substr. MG1655"
+strain:"K-12"
+sub_strain:"MG1655"
+db_xref:"taxon:511145"
+version: NC_000913
+151392 URFs total
+2413 ORFs in Golden Standard
+2409 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1866
+False Positives (Type I): 1066
+False Negatives (Type II): 543
+True Negatives: 65351
+
+Optimal log odds threshold w.r.t min(FP+FN): 28.2210417933
+
+Performance Metrics:
+Match Coefficient (accuracy):0.976622
+True Positive Rate (sensitivity/recall): 0.774595
+Positive Predictive Value (precision/"guigo specificity"]:0.636426
+True Negative Rate: (Specificity):0.983950
+False Positive Rate: 0.0160501076532
+Negative Predictive Value: 0.991759492518
+False Discovery Rate: 0.363574351978
+ROC value: 0.0207206373722
+ROC product 0.012432337435
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 2014
+False Positives (Type I): 1281
+False Negatives (Type II): 395
+True Negatives: 65136
+
+Optimal log odds threshold w.r.t min(FP+FN): 21.0704078137
+
+Performance Metrics:
+Match Coefficient (accuracy):0.975649
+MCC optimized Confusion Matrix:
+True Positives: 2074
+False Positives (Type I): 1395
+False Negatives (Type II): 335
+True Negatives: 65022
+
+Optimal log odds threshold w.r.t MCC: 17.9747420897
+
+Performance Metrics:
+Match Coefficient: 0.974864
+Mathew's Correlation Coefficient: 0.705595
+TPR-FPR:0.839934 
+True Positive Rate: 0.860938
+False Positive Rate: 0.021004
+Positive Predictive Value: 0.597867
+True Negative Rate: 0.978996
+Negative Predictive Value: 0.994874
+False Positive Discovery Rate: 0.402133
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2299
+False Positives (Type I): 3164
+False Negatives (Type II): 110
+True Negatives: 63253
+
+Optimal log odds threshold w.r.t TPR-FPR: 2.27057158416
+
+Performance Metrics:
+Match Coefficient: 0.952431
+Mathew's Correlation Coefficient: 0.616436
+ROC: 0.906699
+True Positive Rate: 0.954338
+False Positive Rate: 0.047638
+Positive Predictive Value: 0.420831
+True Negative Rate: 0.952362
+Negative Predictive Value: 0.998264
+False Positive Discovery Rate: 0.579169
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+

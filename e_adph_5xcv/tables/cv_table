@@ -1,0 +1,15 @@
+confusion matrices av cv +- 1 sd:
+model & TP & FP & FN & TN \\
+aa_adph & 2297 $\pm$ 6 & 2930 $\pm$ 152 & 112 $\pm$ 6 & 63487 $\pm$ 152
+ecoparseadph & 2290 $\pm$ 11 & 2892 $\pm$ 282 & 119 $\pm$ 11 & 63525 $\pm$ 282
+i3pmc_adph & 2282 $\pm$ 4 & 2775 $\pm$ 66 & 127 $\pm$ 4 & 63642 $\pm$ 66
+mc5_adph & 2163 $\pm$ 9 & 4125 $\pm$ 267 & 246 $\pm$ 9 & 62292 $\pm$ 267
+mm_adph & 2297 $\pm$ 8 & 3048 $\pm$ 196 & 112 $\pm$ 8 & 63369 $\pm$ 196
+
+Performance metrics average cv +- 1 sd:
+model & TPR & FPR & AUC  \\
+aa_adph & 0.953 $\pm$ 0.003 & 0.044 $\pm$ 0.0 & 0.977 $\pm$ 0.001
+ecoparseadph & 0.951 $\pm$ 0.005 & 0.044 $\pm$ 0.0 & 0.975 $\pm$ 0.001
+i3pmc_adph & 0.947 $\pm$ 0.002 & 0.042 $\pm$ 0.0 & 0.974 $\pm$ 0.001
+mc5_adph & 0.898 $\pm$ 0.004 & 0.062 $\pm$ 0.0 & 0.949 $\pm$ 0.001
+mm_adph & 0.954 $\pm$ 0.003 & 0.046 $\pm$ 0.0 & 0.976 $\pm$ 0.001
