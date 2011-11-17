@@ -1,0 +1,31 @@
+These are the files of the codonhmm project.
+
+The project is based on using the probabilistic logic programming language and machine learning system PRISM to implement and test a number of different HMM based models of protein coding potential to be used for e.g. gene finding.
+
+Running these experiments requires PRISM that is available for download at:
+
+
+The project include the following directories: (See README within each directory for a more detailed description)
+
+vecocyc: files for and from codonhmm experiments on the complete E. coli verified ecocyc dataset
+
+e_5xcv: files for and from codonhmm E . coli cross-validation experiments with standard models
+
+e_3x5xcv: files for and from codonhmm E . coli cross-validation experiments with 3-state version models
+
+e_adph_5xcv: files for and from codonhmm E . coli cross-
+validation experiments with ADPH version models
+
+b_5xcv: files for and from codonhmm Bacillus cross-validation experiments with standard models
+
+b_3x5xcv: files for and from codonhmm Bacillus cross-validation experiments with 3-state version models
+
+b_adph_5xcv: files for and from codonhmm Bacillus cross-validation experiments with ADPH version models
+
+Also included are:
+
+codonhmm_s.tar.gz: a generic package for running codonhmm experimenets with standard models
+codonhmm_3.tar.gz: a generic package for running codonhmm experimenets with 3-state model versions
+codonhmm_a.tar.gz:a generic package for running codonhmm experimenets ADPH model versions
+
+
