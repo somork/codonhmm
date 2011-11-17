@@ -1,0 +1,41 @@
+% i3pmc_adph.psm
+% S/ren M/rk
+% 100705
+
+:-['../lib/default.pl'].
+data('../data/cv_train_1.dat').
+
+% parameters:
+values(transition(begin),[state(1,1)]).
+
+values(transition(state(1)),[s,g]).
+
+values(emission(_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+
+% ADPH:
+next(state(1),1,s,state(1,1)).
+next(state(1),1,g,state(1,2)).
+next(state(1),2,s,state(1,2)).
+next(state(1),2,g,state(1,3)).
+next(state(1),3,s,state(1,3)).
+next(state(1),3,g,end).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(NS,Obs).
+
+recursion(state(S,P),[Xi|[Yi|[Zi|R]]]):-
+        msw(emission(state(S)),Xi),
+        msw(emission(Xi),Yi),
+        msw(emission(Xi,Yi),Zi),
+        msw(transition(state(S)),SG),
+        next(state(S),P,SG,NS),
+        recursion(NS,R).
+
+% termination:
+recursion(end,[]).
+
+
+

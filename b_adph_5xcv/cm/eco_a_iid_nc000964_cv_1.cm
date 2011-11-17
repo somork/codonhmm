@@ -1,0 +1,97 @@
+Performance Metrics and Predictions
+Generated using log_odds.py
+Model: eco_a_cv_1.psm
+Null model: iid_cv_1.psm
+Data generated  from idurfs.py
+organism:"Bacillus subtilis subsp. subtilis str. 168"
+strain:"168"
+sub_strain:"subtilis"
+db_xref:"taxon:224308"
+version: NC_000964
+158003 URFs total
+4155 ORFs in Golden Standard
+2181 Unique stop codons in Golden Standard
+
+
+min(FP+FN) optimized Confusion Matrix:
+True Positives: 1637
+False Positives (Type I): 1503
+False Negatives (Type II): 544
+True Negatives: 59514
+
+Optimal log odds threshold w.r.t min(FP+FN): 15.0015710601
+
+Performance Metrics:
+Match Coefficient (accuracy):0.967610
+True Positive Rate (sensitivity/recall): 0.750573
+Positive Predictive Value (precision/"guigo specificity"]:0.521338
+True Negative Rate: (Specificity):0.975368
+False Positive Rate: 0.0246324794729
+Negative Predictive Value: 0.990942089314
+False Discovery Rate: 0.478662420382
+ROC value: 0.0328182270803
+ROC product 0.0184884772569
+
+
+min((FP+FN)/TP) optimized Confusion Matrix:
+True Positives: 1869
+False Positives (Type I): 1820
+False Negatives (Type II): 312
+True Negatives: 59197
+
+Optimal log odds threshold w.r.t min(FP+FN): 7.43087328683
+
+Performance Metrics:
+Match Coefficient (accuracy):0.966265
+MCC optimized Confusion Matrix:
+True Positives: 1922
+False Positives (Type I): 1942
+False Negatives (Type II): 259
+True Negatives: 59075
+
+Optimal log odds threshold w.r.t MCC: 5.41619830058
+
+Performance Metrics:
+Match Coefficient: 0.965173
+Mathew's Correlation Coefficient: 0.647151
+TPR-FPR:0.849420 
+True Positive Rate: 0.881247
+False Positive Rate: 0.031827
+Positive Predictive Value: 0.497412
+True Negative Rate: 0.968173
+Negative Predictive Value: 0.995635
+False Positive Discovery Rate: 0.502588
+
+
+TPR-FPR optimized Confusion Matrix:
+True Positives: 2059
+False Positives (Type I): 2824
+False Negatives (Type II): 122
+True Negatives: 58193
+
+Optimal log odds threshold w.r.t TPR-FPR: 0.888837305747
+
+Performance Metrics:
+Match Coefficient: 0.953385
+Mathew's Correlation Coefficient: 0.613748
+ROC: 0.897780
+True Positive Rate: 0.944062
+False Positive Rate: 0.046282
+Positive Predictive Value: 0.421667
+True Negative Rate: 0.953718
+Negative Predictive Value: 0.997908
+False Positive Discovery Rate: 0.578333
+
+
+Notes:
+MC=((tp+tn)/(tp+fp+fn+tn)) "Accuracy"
+MCC=((tp*tn)- (fn*fp))/sqrt((tp+fn)*(tn+fp)*(tp+fp)*(tn+fn))
+MCC: Pearson product-moment correlation coefficient in the particular case of two binary variables (coding/noncoding) and Specificity corrected as pr.  bursett&guigo
+TPR = tp/(tp+fn), "Sensitivity"/"Recall"
+FPR = fp/(fp+tn)
+PPV= tp/(tp+fp) "Precision"/"BursettGuigo Specificity"
+TNR=tn/(fp+tn) "Specificity"
+NPV = tn/(tn+fn)
+FDR = fp/fp+tp
+
+

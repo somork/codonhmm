@@ -1,0 +1,55 @@
+% mm_adph.psm
+% from frames.psm
+% S/ren M/rk
+% 100614
+
+:-['../lib/default.pl'].
+data('../data/cv_train_1.dat').
+
+% parameters:
+
+values(emission(_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+values(emission(_,_,_),[a,c,g,t]).
+
+%values(emission(p),[a,c,g,t]).
+%values(emission(p,_),[a,c,g,t]).
+%values(emission(p,t,a),[c,t]).
+%values(emission(p,t,g),[c,g,t]).
+%values(emission(p,_,_),[a,c,g,t]).
+
+%values(emission(s),[a,c,g,t]).
+%values(emission(s,_),[a,c,g,t]).
+%values(emission(s,_,_),[a,c,g,t]).
+
+values(transition(i),[g]).
+values(transition(s),[g]).
+values(transition(p),[s,g]).
+
+values(next(i,0,g),[s(p,1)]).
+
+values(next(p,1,s),[s(p,1)]).
+values(next(p,1,g),[s(p,2)]).
+values(next(p,2,s),[s(p,2)]).
+values(next(p,2,g),[s(p,3)]).
+values(next(p,3,s),[s(p,3)]).
+values(next(p,3,g),[s(s,0)]).
+
+values(next(s,0,g),[end]).
+
+
+% termination:
+recursion(end,[]).
+
+recursion(s(S,P),[Q|[V|[W|R]]]):-
+        msw(emission(S),Q),
+        msw(emission(S,Q),V),
+        msw(emission(S,Q,V),W),
+        msw(transition(S),SG),
+        msw(next(S,P,SG),N),
+        recursion(N,R).
+
+% initiation:
+model(Obs):-
+        recursion(s(i,0),Obs).
+
