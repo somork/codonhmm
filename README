@@ -13,8 +13,7 @@ e_5xcv: files for and from codonhmm E . coli cross-validation experiments with s
 
 e_3x5xcv: files for and from codonhmm E . coli cross-validation experiments with 3-state version models
 
-e_adph_5xcv: files for and from codonhmm E . coli cross-
-validation experiments with ADPH version models
+e_adph_5xcv: files for and from codonhmm E . coli cross-validation experiments with ADPH version models
 
 b_5xcv: files for and from codonhmm Bacillus cross-validation experiments with standard models
 
