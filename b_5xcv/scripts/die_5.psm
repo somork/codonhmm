@@ -1,0 +1,1 @@
+% die_5.psm% S/ren M/rk% 5-sided die for generating random sequence for cross-validation set% annotationsget:-        get_samples(4155,model(X),S),        writeln(S).values(die,[1,2,3,4,5]).model(X):-        msw(die,X).
