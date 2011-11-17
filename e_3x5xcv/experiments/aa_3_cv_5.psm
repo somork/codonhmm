@@ -1,0 +1,60 @@
+% aa_3.psm
+% S/ren M/rk
+% 100530
+
+:-['~/settings/default.pl'].
+
+%data('~/nc000913_2/data/nc000913_2_vecocyc.dat').
+data('../training_data/vecocyc_train_5.dat').
+
+
+% parameters:
+
+values(transition(begin),[state(start,1),state(start,2),state(start,3)]).
+
+values(transition(state(_,1)),[state(ala,1),state(arg,1),state(asn,1),state(asp,1),state(cys,1),state(gln,1),state(glu,1),state(gly,1),state(his,1),state(ile,1),state(leu,1),state(lys,1),state(met,1),state(phe,1),state(pro,1),state(ser,1),state(thr,1),state(trp,1),state(tyr,1),state(val,1),state(stop,1),end]).
+
+values(transition(state(_,2)),[state(ala,2),state(arg,2),state(asn,2),state(asp,2),state(cys,2),state(gln,2),state(glu,2),state(gly,2),state(his,2),state(ile,2),state(leu,2),state(lys,2),state(met,2),state(phe,2),state(pro,2),state(ser,2),state(thr,2),state(trp,2),state(tyr,2),state(val,2),state(stop,2),end]).
+
+values(transition(state(_,3)),[state(ala,3),state(arg,3),state(asn,3),state(asp,3),state(cys,3),state(gln,3),state(glu,3),state(gly,3),state(his,3),state(ile,3),state(leu,3),state(lys,3),state(met,3),state(phe,3),state(pro,3),state(ser,3),state(thr,3),state(trp,3),state(tyr,3),state(val,3),state(stop,3),end]).
+
+
+values(emission(start,_),[(a,t,g),(g,t,g),(t,t,g)]).
+
+values(emission(ala,_),[(g,c,a),(g,c,c),(g,c,g),(g,c,t)]).
+values(emission(arg,_),[(a,g,a),(a,g,g),(c,g,a),(c,g,c),(c,g,g),(c,g,t)]).
+values(emission(asn,_),[(a,a,c),(a,a,t)]).
+values(emission(asp,_),[(g,a,c),(g,a,t)]).
+values(emission(cys,_),[(t,g,c),(t,g,t)]).
+values(emission(gln,_),[(c,a,a),(c,a,g)]).
+values(emission(glu,_),[(g,a,a),(g,a,g)]).
+values(emission(gly,_),[(g,g,a),(g,g,c),(g,g,g),(g,g,t)]).
+values(emission(his,_),[(c,a,c),(c,a,t)]).
+values(emission(ile,_),[(a,t,a),(a,t,c),(a,t,t)]).
+values(emission(leu,_),[(c,t,a),(c,t,c),(c,t,g),(c,t,t),(t,t,a),(t,t,g)]).
+values(emission(lys,_),[(a,a,a),(a,a,g)]).
+values(emission(met,_),[(a,t,g)]).
+values(emission(phe,_),[(t,t,c),(t,t,t)]).
+values(emission(pro,_),[(c,c,a),(c,c,c),(c,c,g),(c,c,t)]).
+values(emission(ser,_),[(a,g,c),(a,g,t),(t,c,a),(t,c,c),(t,c,g),(t,c,t)]).
+values(emission(thr,_),[(a,c,a),(a,c,c),(a,c,g),(a,c,t)]).
+values(emission(trp,_),[(t,g,g)]).
+values(emission(tyr,_),[(t,a,c),(t,a,t)]).
+values(emission(val,_),[(g,t,a),(g,t,c),(g,t,g),(g,t,t)]).
+values(emission(stop,_),[(t,a,a),(t,a,g),(t,g,a)]).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(NS,Obs).
+
+% recursion:
+recursion(state(S,P),[X|[Y|[Z|R]]]):-	
+        msw(emission(S,P),(X,Y,Z)),
+        msw(transition(state(S,P)),NS),
+        recursion(NS,R).
+
+% termination:
+recursion(end,[]).
+
+
