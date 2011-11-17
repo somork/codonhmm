@@ -1,0 +1,74 @@
+# These are the instructions for making codonhmm experiments with
+# 3-state version models...
+
+# the package contains the following directories: scripts + lib
+# + genomes + models+viterbi [with the standard iid_models viterbi
+# files])+data(with the original cross-validation partitions))
+
+# Go to scripts directory:
+
+# set up folders etc by running:
+./setup.sh Refseqnumber [e.g. 000913_2]
+
+# when finished (../data/_u60_dat larger than 0) run: 
+[this will overwrite original cross-validation data partitions, so can
+be skipped if reproducing the original work]:
+./cross_validation_data.sh
+
+### Change directory to experiments:
+## run experiments (1 at a time!) starting from iid:
+
+(./iid_experiments.sh &)
+(./aa_experiments.sh &)
+(./eco_experiments.sh &)
+(./i3pmc_experiments.sh &)
+(./mc5_experiments.sh &)
+(./mm_experiments.sh &)
+
+###### 
+# run decoding experiments:
+# check success with ls -l ../viterbi ... sometimes PRISM crashes...
+# ifthen just delete lines of succesful runs and rerun...
+# for all models (e.g. with iid:)
+
+(./iid_cv_1_decode.sh)
+(./iid_cv_2_decode.sh)
+(./iid_cv_3_decode.sh)
+(./iid_cv_4_decode.sh)
+(./iid_cv_5_decode.sh)
+
+####### Change directory to scripts:
+
+### concat viterbi files:
+
+./concat_viterbi.sh
+
+########## Get log odds:
+
+./aa_log_odds.sh
+./eco_log_odds.sh
+./i3pmc_log_odds.sh
+./mc5_log_odds.sh
+./mm_log_odds.sh
+
+
+# get stuff from log odds (e.g. for R)
+
+./aa_get_stuff_from_lo.sh
+./eco_get_stuff_from_lo.sh
+./i3pmc_get_stuff_from_lo.sh
+./mc5_get_stuff_from_lo.sh
+./mm_get_stuff_from_lo.sh
+
+
+# get AUC (for tables and R)
+./auc.sh
+./concat_auc.sh
+
+# get table entries...
+./tables.sh
+
+# get vfe values for R:
+./learn_stats.sh
+
+
