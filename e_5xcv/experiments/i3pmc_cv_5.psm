@@ -1,0 +1,32 @@
+% i3pmc.psm
+% S/ren M/rk
+% 100705
+
+:-['~/settings/default.pl'].
+data('../training_data/vecocyc_train_5.dat').
+
+% parameters:
+values(transition(begin),[state(1)]).
+
+values(transition(state(1)),[state(1),end]).
+
+values(emission(_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(NS,Obs).
+
+recursion(state(S),[Xi|[Yi|[Zi|R]]]):-
+        msw(emission(S),Xi),
+        msw(emission(Xi),Yi),
+        msw(emission(Xi,Yi),Zi),
+        msw(transition(state(S)),NS),
+        recursion(NS,R).
+
+% termination:
+recursion(end,[]).
+
+
+

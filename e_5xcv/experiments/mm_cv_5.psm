@@ -1,0 +1,38 @@
+% mm.psm
+% S/ren M/rk
+% 100517
+
+:-['~/settings/default'].
+
+%data('~/nc000913_2/data/nc000913_2_vecocyc.dat').
+%data('../cross_validation_training_data/vecocyc_train_5.dat').
+data('../training_data/vecocyc_train_5.dat').
+
+
+
+% parameters:
+values(transition(begin),[state(1)]).
+
+values(transition(state(1),_,_,_),[state(1),end]).
+
+values(emission(_,_,_),[a,c,g,t]).
+values(emission(_,_),[a,c,g,t]).
+values(emission(_),[a,c,g,t]).
+
+% initiation:
+model(Obs):-
+        msw(transition(begin),NS),
+        recursion(NS,Obs).
+
+% recursion:
+recursion(state(S),[Xi|[Yi|[Zi|R]]]):-
+        msw(emission(S),Xi),
+        msw(emission(S,Xi),Yi),
+        msw(emission(S,Xi,Yi),Zi),
+        msw(transition(state(S),Xi,Yi,Zi),NS),
+        recursion(NS,R).
+
+% termination:
+recursion(end,[]).
+
+

@@ -1,0 +1,3 @@
+switch(transition(state(1)),unfixed,[state(1),end],[5.215715818641749e+05,4.955477729531517e+02]).
+switch(transition(begin),unfixed,[state(1)],[4.963280199799125e+02]).
+switch(emission(state(1)),unfixed,[a,c,g,t],[1.234622640175741e+05,1.293772585429083e+05,1.445172501009718e+05,1.247102582666746e+05]).
