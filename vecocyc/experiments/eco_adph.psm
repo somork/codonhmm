@@ -5,7 +5,8 @@
 :-['../lib/default.pl'].
 data('../data/nc000913_2_v.dat').
 
-% parameters::
+%parameters:
+
 values(transition(begin),[state(atg1),state(ttg1),state(gtg1),state(ctg1)]).
 
 values(transition(silent),[state(aaa1), state(aac1), state(aag1), state(aat1), state(aca1), state(acc1), state(acg1), state(act1), state(aga1), state(agc1), state(agg1), state(agt1), state(ata1), state(atc1), state(atg1), state(att1), state(caa1), state(cac1), state(cag1), state(cat1), state(cca1), state(ccc1), state(ccg1), state(cct1), state(cga1), state(cgc1), state(cgg1), state(cgt1), state(cta1), state(ctc1), state(ctg1), state(ctt1), state(gaa1), state(gac1), state(gag1), state(gat1), state(gca1), state(gcc1), state(gcg1), state(gct1), state(gga1), state(ggc1), state(ggg1), state(ggt1), state(gta1), state(gtc1), state(gtg1), state(gtt1), state(taa1), state(tac1), state(tag1), state(tat1), state(tca1), state(tcc1), state(tcg1), state(tct1), state(tga1), state(tgc1), state(tgg1), state(tgt1), state(tta1), state(ttc1), state(ttg1), state(ttt1)]).
@@ -140,74 +141,73 @@ values(transition(state(ttc2)),[state(ttc3)]).
 values(transition(state(ttg2)),[state(ttg3)]).
 values(transition(state(ttt2)),[state(ttt3)]).
 
-values(transition(state(aaa3)),[silent,end]).
-values(transition(state(aac3)),[silent,end]).
-values(transition(state(aag3)),[silent,end]).
-values(transition(state(aat3)),[silent,end]).
-values(transition(state(aca3)),[silent,end]).
-values(transition(state(acc3)),[silent,end]).
-values(transition(state(acg3)),[silent,end]).
-values(transition(state(act3)),[silent,end]).
-values(transition(state(aga3)),[silent,end]).
-values(transition(state(agc3)),[silent,end]).
-values(transition(state(agg3)),[silent,end]).
-values(transition(state(agt3)),[silent,end]).
-values(transition(state(ata3)),[silent,end]).
-values(transition(state(atc3)),[silent,end]).
-values(transition(state(atg3)),[silent,end]).
-values(transition(state(att3)),[silent,end]).
-values(transition(state(caa3)),[silent,end]).
-values(transition(state(cac3)),[silent,end]).
-values(transition(state(cag3)),[silent,end]).
-values(transition(state(cat3)),[silent,end]).
-values(transition(state(cca3)),[silent,end]).
-values(transition(state(ccc3)),[silent,end]).
-values(transition(state(ccg3)),[silent,end]).
-values(transition(state(cct3)),[silent,end]).
-values(transition(state(cga3)),[silent,end]).
-values(transition(state(cgc3)),[silent,end]).
-values(transition(state(cgg3)),[silent,end]).
-values(transition(state(cgt3)),[silent,end]).
-values(transition(state(cta3)),[silent,end]).
-values(transition(state(ctc3)),[silent,end]).
-values(transition(state(ctg3)),[silent,end]).
-values(transition(state(ctt3)),[silent,end]).
-values(transition(state(gaa3)),[silent,end]).
-values(transition(state(gac3)),[silent,end]).
-values(transition(state(gag3)),[silent,end]).
-values(transition(state(gat3)),[silent,end]).
-values(transition(state(gca3)),[silent,end]).
-values(transition(state(gcc3)),[silent,end]).
-values(transition(state(gcg3)),[silent,end]).
-values(transition(state(gct3)),[silent,end]).
-values(transition(state(gga3)),[silent,end]).
-values(transition(state(ggc3)),[silent,end]).
-values(transition(state(ggg3)),[silent,end]).
-values(transition(state(ggt3)),[silent,end]).
-values(transition(state(gta3)),[silent,end]).
-values(transition(state(gtc3)),[silent,end]).
-values(transition(state(gtg3)),[silent,end]).
-values(transition(state(gtt3)),[silent,end]).
-values(transition(state(tac3)),[silent,end]).
-values(transition(state(tat3)),[silent,end]).
-values(transition(state(tca3)),[silent,end]).
-values(transition(state(tcc3)),[silent,end]).
-values(transition(state(tcg3)),[silent,end]).
-values(transition(state(tct3)),[silent,end]).
-values(transition(state(tgc3)),[silent,end]).
-values(transition(state(tgg3)),[silent,end]).
-values(transition(state(tgt3)),[silent,end]).
-values(transition(state(tta3)),[silent,end]).
-values(transition(state(ttc3)),[silent,end]).
-values(transition(state(ttg3)),[silent,end]).
-values(transition(state(ttt3)),[silent,end]).
+values(transition(state(aaa3)),[silent]).
+values(transition(state(aac3)),[silent]).
+values(transition(state(aag3)),[silent]).
+values(transition(state(aat3)),[silent]).
+values(transition(state(aca3)),[silent]).
+values(transition(state(acc3)),[silent]).
+values(transition(state(acg3)),[silent]).
+values(transition(state(act3)),[silent]).
+values(transition(state(aga3)),[silent]).
+values(transition(state(agc3)),[silent]).
+values(transition(state(agg3)),[silent]).
+values(transition(state(agt3)),[silent]).
+values(transition(state(ata3)),[silent]).
+values(transition(state(atc3)),[silent]).
+values(transition(state(atg3)),[silent]).
+values(transition(state(att3)),[silent]).
+values(transition(state(caa3)),[silent]).
+values(transition(state(cac3)),[silent]).
+values(transition(state(cag3)),[silent]).
+values(transition(state(cat3)),[silent]).
+values(transition(state(cca3)),[silent]).
+values(transition(state(ccc3)),[silent]).
+values(transition(state(ccg3)),[silent]).
+values(transition(state(cct3)),[silent]).
+values(transition(state(cga3)),[silent]).
+values(transition(state(cgc3)),[silent]).
+values(transition(state(cgg3)),[silent]).
+values(transition(state(cgt3)),[silent]).
+values(transition(state(cta3)),[silent]).
+values(transition(state(ctc3)),[silent]).
+values(transition(state(ctg3)),[silent]).
+values(transition(state(ctt3)),[silent]).
+values(transition(state(gaa3)),[silent]).
+values(transition(state(gac3)),[silent]).
+values(transition(state(gag3)),[silent]).
+values(transition(state(gat3)),[silent]).
+values(transition(state(gca3)),[silent]).
+values(transition(state(gcc3)),[silent]).
+values(transition(state(gcg3)),[silent]).
+values(transition(state(gct3)),[silent]).
+values(transition(state(gga3)),[silent]).
+values(transition(state(ggc3)),[silent]).
+values(transition(state(ggg3)),[silent]).
+values(transition(state(ggt3)),[silent]).
+values(transition(state(gta3)),[silent]).
+values(transition(state(gtc3)),[silent]).
+values(transition(state(gtg3)),[silent]).
+values(transition(state(gtt3)),[silent]).
+values(transition(state(tac3)),[silent]).
+values(transition(state(tat3)),[silent]).
+values(transition(state(tca3)),[silent]).
+values(transition(state(tcc3)),[silent]).
+values(transition(state(tcg3)),[silent]).
+values(transition(state(tct3)),[silent]).
+values(transition(state(tgc3)),[silent]).
+values(transition(state(tgg3)),[silent]).
+values(transition(state(tgt3)),[silent]).
+values(transition(state(tta3)),[silent]).
+values(transition(state(ttc3)),[silent]).
+values(transition(state(ttg3)),[silent]).
+values(transition(state(ttt3)),[silent]).
 
-values(transition(state(taa3)),[silent,end]).
-values(transition(state(tag3)),[silent,end]).
-values(transition(state(tga3)),[silent,end]).
+values(transition(state(taa3)),[silent]).
+values(transition(state(tag3)),[silent]).
+values(transition(state(tga3)),[silent]).
 
 %emission probabilities:
-%values(emission(state(intergenic)),[a,c,g,t]).
 
 values(emission(state(aaa1)),[a]).
 values(emission(state(aaa2)),[a]).
@@ -405,33 +405,35 @@ values(emission(state(ttt1)),[t]).
 values(emission(state(ttt2)),[t]).
 values(emission(state(ttt3)),[t]).
 
-values(transition(sg),[s,g]).
+% ADPH:
+values(adph,[s,g]).
+
+adph(1,s,adph(1)).
+adph(1,g,adph(2)).
+adph(2,s,adph(2)).
+adph(2,g,adph(3)).
+adph(3,s,adph(3)).
+adph(3,g,end).
 
 % initiation:
 model(Obs):-
         msw(transition(begin),NS),
-        recursion(NS,1,Obs).
+        recursion(adph(1),NS,Obs).
+
+% silent recursion:
+recursion(adph(A),silent,R):-
+        msw(transition(silent),NS),
+        msw(adph,SG),
+        adph(A,SG,NA),
+        recursion(NA,NS,R).
+
+% recursion:
+recursion(ADPH,state(S),[Xi|R]):-
+        msw(emission(state(S)),Xi),
+        msw(transition(state(S)),NS),
+        recursion(ADPH,NS,R).
 
 % termination:
 recursion(end,_,[]).
 
-% silent recursion:
-recursion(silent,P,R):-
-        msw(transition(sg),SG),
-        msw(transition(silent),NS),
-        next(NS,P,SG,N,NP),
-        recursion(N,NP,R).
-
-% recursion:
-recursion(state(S),P,[Xi|R]):-
-        msw(emission(state(S)),Xi),
-        msw(transition(state(S)),N),        
-        recursion(N,P,R).
-
-next(NS,1,s,NS,1).
-next(NS,1,g,NS,2).
-next(NS,2,s,NS,2).
-next(NS,2,g,NS,3).
-next(NS,3,_,NS,3).
-
-
+       
